@@ -3,7 +3,8 @@
 }
 
 .c3-axis-y text {
-  font-size: 15px; //change the size of the fonts
+  font-size: 0px; //change the size of the fonts
+  display: none;
 }
 
 .c3-axis-x text {
