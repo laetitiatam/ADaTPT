@@ -1,18 +1,24 @@
 #chart .c3-line-Score {
   stroke-width: 5px;
 }
-.c3-axis-y text
-{
+
+.c3-axis-y text {
   font-size: 15px; //change the size of the fonts
 }
-.c3-axis-x text
-{
+
+.c3-axis-x text {
   font-size: 15px; //change the size of the fonts
 }
-.c3-legend-item text
-{
+
+.c3-legend-item text {
   font-size: 15px; //change the size of the fonts
 }
+
 html {
-  font-size: 200%; /* font-size 1em = 10px on default browser settings */
+  font-size: 200%;
+  /* font-size 1em = 10px on default browser settings */
+}
+
+#ex1Slider .slider-selection {
+  background: #BABABA;
 }
