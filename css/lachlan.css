@@ -14,5 +14,5 @@
   font-size: 15px; //change the size of the fonts
 }
 html {
-  font-size: 300%; /* font-size 1em = 10px on default browser settings */
+  font-size: 200%; /* font-size 1em = 10px on default browser settings */
 }
