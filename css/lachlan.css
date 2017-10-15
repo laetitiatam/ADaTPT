@@ -1,5 +1,9 @@
 #chart .c3-line-Score {
-  stroke-width: 5px;
+  stroke-width: 7px;
+}
+
+.c3-line-Medication {
+  stroke-width: 3px;
 }
 
 .c3-axis-y text {
