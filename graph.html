@@ -1,0 +1,56 @@
+<!-- Load c3.css -->
+<link href="../c3-0.4.18/c3.css" rel="stylesheet">
+<link href="lachlan.css" rel="stylesheet">
+
+<!-- Load d3.js and c3.js -->
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="../c3-0.4.18/c3.min.js"></script>
+Score
+<center>
+<div id="chart"></div>
+</center>
+<script type="text/javascript">
+var chart = c3.generate({
+    bindto: '#chart',
+	size: {
+        height: 480,
+        width: 700
+    },
+    data: {
+	x: 'x',
+      columns: [
+	    ['x', '2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04', '2013-01-05', '2013-01-06'],
+        ['Score', 1, 200, 560, 480, 580, 750, 1000],
+        ['Sleep', 250, 220, 160, 40, 200, 240, 230],
+        ['Medication', 100, 100, 1, 1, 100, 100, 100],
+        ['Exercise', 220, 120, 100, 140, 150, 125, 100]
+      ],
+      axes: {
+        m: 'y2' // ADD
+      },
+	  types: {
+	      Score: 'area-spline',
+		  Medication: 'step'
+	  }
+    },
+    axis: {
+		x : {
+			type: 'timeseries',
+            tick: {
+                format: '%A'
+            },
+            min : '2013-01-01',
+			padding : 0
+        },
+	    y : {
+            min : 0,
+            padding : {
+              bottom : 0
+            }
+        },
+    },
+	legend: {
+        position: 'right'
+    }
+});
+</script>
